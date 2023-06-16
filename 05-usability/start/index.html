@@ -2,11 +2,178 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Critical Web Design</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+	<script src="assets/js/main.js"></script>
+
+	<style>
+
+		h1{
+			text-align: center;
+			font-weight: bold;
+			color: rgb(33, 24, 110);
+			font-size: 80px;
+
+		}
+
+		* {
+			font-family: 'Roboto', sans-serif;
+			color: rgb(33, 24, 110);
+		}
+		.creditsHeader{
+			text-align:right;
+		}
+		.testGiver{
+			text-align:right;
+		}
+		.testTaker{
+			text-align:right;
+		}
+		body{
+			background-color: rgb(251, 239, 222);
+		}
+	</style>
+
 </head>
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-	<h1>Hello world!</h1>
+	<h1>Target.com Usability Test</h1>
+	<br>
+	<div class="container">
+		<div class="row">
+			<!--Description and Credits Row-->
 
+			<div class="col-12 col-md-6 col-lg-6">
+				<h2>Description</h2>
+				<p class="description">
+					As a practice for testing the usability of a website 
+					(in our case, target.com) and the effectiveness of the System Usability Scale (SUS),
+					I created a number of tasks that a person relatively unacquainted with the website would perform.
+					I then measured how long it took the user to find these pages as well as the number of clicks required, and recorded my observations.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+
+				<h2 class="creditsHeader">Credits</h2>
+				<br>
+				<h3 class="testGiver">Test Giver: Tom Roff</h3>
+				<h3 class="testTaker">Test Taker: Evie Mulhern</h3>
+			</div>
+
+		</div>
+		<hr>
+		<div class="row">
+			<!--Task 1 Row-->
+			<div class="col-12 col-md-6 col-lg-6">
+				<h3>Task 1: Find the Phone Number of the Closest Target Store to You</h3>
+				<p>Took just 3 seconds and one click since the closest Target store was auto-selected. The user was successful, and this was the easiest one of all of the tasks. Target even had other nearby stores listed on the page, so it would have been very easy to see the phone number of all nearby stores.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<img src="assets/screenshots/Task1Screenshot.jpg" alt="Task1Screenshot" class="img-fluid">
+			</div>
+			<hr class="mt-2">
+		</div>
+		<div class="row" class="ml-1">
+			<!--Task 2 Row-->
+			<div class="col-12 col-md-6 col-lg-6">
+				<h3>Task 2: Order In-Store Pickup for a Super Soaker Under 20$</h3>
+				<p>
+					Took about 40 seconds and 5 clicks. Took slightly longer than necessary, since first clicked “Pickup & Delivery” just to do what the search bar would do. Nevertheless, was a fast and efficient way to place an order for the Super Soaker.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<img src="assets/screenshots/Task2Screenshot.jpg" alt="Task1Screenshot" class="img-fluid">
+			</div>
+			<hr class="mt-2">
+		</div>
+		<div class="row">
+			<!--Task 3 Row-->
+			<div class="col-12 col-md-6 col-lg-6">
+				<h3>Task 3: Navigate to the Register Page for Target's Frequent Shopper Program</h3>
+				<p>25s, 2 clicks (1 errant click). Task was successful, but a bit of confusion discerning Target Circle from RedCard, and the benefits of each.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<img src="assets/screenshots/Task3Screenshot.jpg" alt="Task1Screenshot" class="img-fluid">
+			</div>
+			<hr class="mt-2">
+		</div>
+		<div class="row">
+			<!--Task 4 Row-->
+			<div class="col-12 col-md-6 col-lg-6">
+				<h3>Task 4: Look at Target's Career Opportunities</h3>
+				<p>Gave up after 1m and 15s, easy to find career page but job search didn’t work after the use of various keywords. Task was unsuccessful, it was very difficult to find a list of the jobs one was actually looking for. 
+				It is possible that the search was coming up with no results because all job postings were taken, but then the website should say that instead of giving an error involving an incorrect keyword (See below). Was easy to find career section of website, with button listed at bottom of page. Of note, I didn’t have this same error on my computer, but for some reason the search was broken when the subject tried it.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<img src="assets/screenshots/Task4Screenshot.jpg" alt="Task1Screenshot" class="img-fluid">
+			</div>
+			<hr class="mt-2">
+		</div>
+		<div class="row">
+			<!--Task 5 Row-->
+			<div class="col-12 col-md-6 col-lg-6">
+				<h3>Task 5: Find Clothes on Clearance</h3>
+				<p>Took 30s and only 3 clicks, but found any clothes on sale instead of specifically clearance deals. So, partial success?
+					 In any case, subject navigated to Categories instead of Deals at the top of the page, meaning that once the user made it to the clothes section, the only way to filter from there was by “Deals” and not “Clearance”.
+				</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<img src="assets/screenshots/Task5Screenshot.jpg" alt="Task1Screenshot" class="img-fluid">
+			</div>
+			<hr class="mt-2">
+		</div>
+
+		<div class="row">
+			<!--Conclusion Row-->
+			<br>
+			<br>
+			<h1>Concluding Recommendations</h1>
+			<br>
+			<br>
+			<br>
+			<p class="description">
+				For target.com, I would allow the user to filter products by clearance. This allows users to find better deals easier on their website. In addition, the weakest point of the website was the careers section. 
+				Although potentially less important than wow-ing customers, the fact that it was so frustrating for Evie to try to find a career is an important note that the website should fix. 
+				To fix this, I would fix the errors that the keyword search gave, or simply remove the keyword search altogether and show all job postings at a provided Target location.
+			</p>
+
+
+		</div>
+		<br>
+		<div class="row">
+			<form action="#" id="susForm">
+				<label for="q1" class="form-label">I think that I would like to use this system frequently.</label>
+				<input type="number" class="form-control" value="5" name="q1"  min="0" max="5" id="q1" required>
+				<label for="q2" class="form-label">I found the system unnecessarily complex.</label>
+				<input type="number" class="form-control" value="4" name="q2"  min="0" max="5" id="q2" required>
+				<label for="q3" class="form-label">I thought the system was easy to use.</label>
+				<input type="number" class="form-control" value="5" name="q3"  min="0" max="5" id="q3" required>
+				<label for="q4" class="form-label">I think that I would need the support of a technical person to be able to use this system.</label>
+				<input type="number" class="form-control" value="1" name="q4"  min="0" max="5" id="q4" required>
+				<label for="q5" class="form-label">I found the various functions in this system were well integrated.</label>
+				<input type="number" class="form-control" value="4" name="q5"  min="0" max="5" id="q5" required>
+				<label for="q6" class="form-label">I thought there was too much inconsistency in this system.</label>
+				<input type="number" class="form-control" value="2" name="q6"  min="0" max="5" id="q6" required>
+				<label for="q7" class="form-label">I would imagine that most people would learn to use this system very quickly.</label>
+				<input type="number" class="form-control" value="5" name="q7"  min="0" max="5" id="q7" required>
+				<label for="q8" class="form-label">I found the system very cumbersome to use.</label>
+				<input type="number" class="form-control" value="2" name="q8"  min="0" max="5" id="q8" required>
+				<label for="q9" class="form-label">I felt very confident using the system.</label>
+				<input type="number" class="form-control" value="5" name="q9"  min="0" max="5" id="q9" required>
+				<label for="q10" class="form-label">I needed to learn a lot of things before I could get going with this system.</label>
+				<input type="number" class="form-control" value="1" name="q10"  min="0" max="5" id="q10" required>
+				<button type="submit">Submit</button>
+				<input type="number" id="answer" class="form-control" step="any">
+			   
+				</form>
+		</div>
+
+	</div>
 </body>
 </html>
